@@ -1,0 +1,22 @@
+# Ignore environment variable files in all folders
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Ignore dependency folders
+**/node_modules/
+
+# Ignore build/output folders
+**/dist/
+**/build/
+
+# Ignore log files
+**/*.log
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/workspace files
+.vscode/
+.idea/
