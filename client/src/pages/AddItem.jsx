@@ -24,6 +24,7 @@ export default function AddItem() {
     try {
       const { data } = await axios.post(backendUrl + "/api/items", formData);
       if (data.success) {
+        toast.success("✅ Item successfully added!");
         setSuccesses(true);
         setForm({ name: "", type: "", desc: "" });
         setCover(null);
@@ -138,12 +139,6 @@ export default function AddItem() {
       >
         Add Item
       </button>
-
-      {successes && (
-        <p className="text-green-600 text-center font-medium">
-          ✅ Item successfully added!
-        </p>
-      )}
     </form>
   );
 }
